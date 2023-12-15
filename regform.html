@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(regformimg.jpg);
+    background-position:center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    text-align: center;
+    user-select: none;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .submit {
+    background-color: black;
+    background-image:url(https://th.bing.com/th/id/R.25fc14a18a580d7fd16867cae2117470?rik=%2fAa%2fiAtc9gSC5w&riu=http%3a%2f%2fphotonshouse.com%2fphoto%2f08%2f087a4811d336aa13552a98c998330439.jpg&ehk=w3QrJjIsPLXJPFM3i71WXefspvP5Xy19OLh9gaTrCws%3d&risl=&pid=ImgRaw&r=0);
+    color: white;
+    border: none;
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+  }
+
+  .submit:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .form{
+    padding-right: 20px;
+  }
+</style>
+<title>Dog Adoption Registration</title>
+</head>
+<body>
+<div class="container">
+  <h1>Dog Adoption Registration</h1>
+  <form class="form" action="regsucces.html">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+    
+    <label for="dog_breed">Preferred Dog Breed:</label>
+    <select id="dog_breed" name="dog_breed" style="width: 104%;padding-right: 10px;">
+      <option value="golden_retriever">Golden Retriever</option>
+      <option value="german_shepard">German Shepard</option>
+      <option value="beagle">Beagle</option>
+      <option value="husky">Husky</option>
+      <option value="rottweiler">Rottweiler</option>
+      <option value="pomeranian">Pomeranian</option>
+      <option value="shitzu">Shitzu</option>  
+      
+    </select>
+    
+    <label for="experience">Experience with Dogs:</label>
+    <textarea id="experience" name="experience" rows="4" required style="width: 100%;height: 80px;padding-right: 20px;"></textarea><br><br>
+    
+   
+   
+    <input type="submit" class="submit"><a href="regsucces.html"></a>;
+  </div>
+  </form>
+</div>
+</body>
+</html>
